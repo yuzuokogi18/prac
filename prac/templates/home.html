@@ -2,6 +2,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<p>{{saludo}}</p>
+<p>{{arreglo}}</p>
+<ul>
+    {% for val in arreglo %}
+    <li>{{val}}</li>
+    {% endfor %}
+</ul>
     <h1>Hola pagina principal</h1>
     <h1>Hola soy  la riata</h1>
 {% endblock content %}
